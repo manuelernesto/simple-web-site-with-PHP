@@ -9,9 +9,11 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
 
-$log = new Monolog\Logger('name');
-$log->pushHandler(new Monolog\Handler\StreamHandler('app.txt', Monolog\Logger::WARNING));
+$log = new Logger('name');
+$log->pushHandler(new StreamHandler('app.txt', Logger::WARNING));
 $log->addWarning('Foo');
 
 

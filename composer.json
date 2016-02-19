@@ -1,0 +1,12 @@
+{
+    "name": "manuelernesto/simple-web-site",
+    "authors": [
+        {
+            "name": "Manuel Ernesto",
+            "email": "manuelernesto@outlook.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.17"
+    }
+}
